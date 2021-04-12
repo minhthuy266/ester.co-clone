@@ -178,21 +178,32 @@
     }
   }
   .work-card {
-    overflow: hidden;
     width: 95%;
     cursor: pointer;
     text-align: center;
+    overflow: hidden;
 
     &__title {
       font-weight: 800;
       font-size: 2.4rem;
+
       @include hover-text;
       text-transform: none;
     }
 
+    &__img {
+      max-height: 63.5rem;
+      display: inline-block;
+      overflow: hidden;
+      margin-bottom: 2rem;
+
+      &:hover img {
+        transform: scale(1.1);
+      }
+    }
+
     img {
-      padding-bottom: 2rem;
-      transition: all 0.3s ease;
+      transition: all 0.5s;
       margin: 0 auto;
 
       @include respond(tab-port) {
@@ -205,10 +216,6 @@
         width: 40rem;
         height: 40rem;
         object-fit: cover;
-      }
-
-      &:hover {
-        transform: scale(1.05);
       }
     }
   }
@@ -329,7 +336,7 @@
 
   &:hover .item-back {
     opacity: 1;
-    transition: all 0.3s;
+    transition: all 0.5s;
   }
 }
 
