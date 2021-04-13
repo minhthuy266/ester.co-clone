@@ -159,6 +159,10 @@
 .works-list {
   &__container {
     padding: 10rem 0;
+
+    @include respond(phone) {
+      padding: 4rem 0;
+    }
   }
 
   &__column {
@@ -303,6 +307,10 @@
 // SECTION INDUSTRIES
 .industries {
   margin: 8rem 0;
+
+  @include respond(phone) {
+    margin: 3rem 0;
+  }
 }
 
 .industries__list {
@@ -372,6 +380,11 @@
 .blog {
   padding-top: 16rem;
   padding-bottom: 8rem;
+
+  @include respond(phone) {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
 }
 
 .blog__list {
@@ -414,6 +427,7 @@
   @include respond(phone) {
     padding-top: 8rem;
     padding-bottom: 8rem;
+    margin-top: 8rem;
   }
 
   &__content {
